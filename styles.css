@@ -89,6 +89,7 @@ main {
             url("./images/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    
     min-height: 100vh;
     min-width:100vw;
     padding: 6rem 10rem 6rem 10rem;
