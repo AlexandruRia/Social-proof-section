@@ -137,12 +137,16 @@ h1 {
 .rating p{
   color:var(--Very-Dark-Magenta);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+
+.star-container{
+  display: flex;
 }
 
 .star {
   max-height: 1rem;
-  margin-right: .4rem;
+  margin-right: .5rem;
 }
 
 .star:nth-of-type(1) {
@@ -151,6 +155,7 @@ h1 {
 
 .rating p {
   margin-left:1.5rem;
+  font-weight: 700;
 }
 
 .first {
@@ -175,7 +180,7 @@ h1 {
 
 
 article {
-  border: 1px solid;
+  
   width:32%;
   height:90%;
   color: var(--White);
@@ -201,4 +206,76 @@ article h2 {
   max-height: 2.2rem;
   border-radius: 50%;
   margin-right:1rem;
+}
+
+@media (max-width:600px) {
+    main {
+      padding: 4rem 2rem 10rem 2rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 23% 25% 1fr;
+      margin-bottom: 8rem;
+    }
+
+    .text-container {
+      grid-column: -1/1;
+      grid-row: 1,1;
+     
+    }
+
+    h1{
+      text-align: center;
+      padding: 0;
+      font-size: 2.5rem;
+    }
+
+    .text-container p {
+      text-align: center;
+      padding: 0;
+    }
+
+    .rating-container {
+      grid-column: -1/1;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      
+    }
+
+    .rating{
+      width:100%;
+      height: 28%;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .star:nth-of-type(1) {
+      margin-left: 0;
+    }
+
+    .star-container {
+
+      margin: 0;
+    }
+
+    .rating p {
+
+      width: 100%;
+       margin: 0;
+       text-align: center;
+    }
+
+    .opinion-container{
+      grid-column: 1/2;
+      grid-row: 3/-1;
+      flex-direction: column;
+      justify-content:space-evenly;
+      height: 110%;
+      
+    }
+
+    article {
+      width: 100%;
+      height: 30%;
+      align-self: center;
+    }
+  
 }
